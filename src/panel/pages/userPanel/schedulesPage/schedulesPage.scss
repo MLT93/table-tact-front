@@ -1,0 +1,71 @@
+.schedulesPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--white);
+  border-radius: 0.3125rem;
+
+  &__header {
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    display: flex;
+  }
+  &__icon {
+    width: 2em;
+    color: var(--btn-bg);
+  }
+}
+
+.calendar {
+  width: 100%;
+  max-width: 50em;
+  background-color: var(--white);
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  align-content: center;
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__btn {
+    width: 100%;
+    padding: 0.5em 1em;
+    border-radius: 0.3125rem;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    cursor: pointer;
+  }
+}
+
+.fc-button-primary {
+  background: var(--btn-bg) !important;
+  color: var(--btn-color) !important;
+}

@@ -1,0 +1,21 @@
+.event {
+  padding: 0.5rem;
+}
+
+.full,
+.available,
+.expired {
+  width: 100%;
+  color: #fff;
+}
+.full {
+  background-color: #ff0000;
+}
+.available {
+  color: #000;
+  background-color: #12b176;
+}
+.expired {
+  background-color: #454545;
+  color: #fff;
+}

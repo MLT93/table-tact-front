@@ -1,0 +1,63 @@
+.didForget {
+  display: grid;
+  place-items: center;
+
+  &__title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-weight: 600;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 33.125rem;
+    padding: 1.9em;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    border-radius: 0.3125rem;
+    -webkit-border-radius: 0.3125rem;
+    -moz-border-radius: 0.3125rem;
+    -ms-border-radius: 0.3125rem;
+    -o-border-radius: 0.3125rem;
+  }
+
+  &__register {
+    font-weight: 600;
+    color: var(--orange);
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  &__btns {
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__goBackIcon {
+    width: 1.5em;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5em;
+
+  &__btn {
+    width: 100%;
+    padding: 0.5em 1.3em;
+    border-radius: 0.3125rem;
+    font-weight: 600;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    cursor: pointer;
+  }
+}
+
+.error__message {
+  color: var(--error);
+}
