@@ -9,7 +9,7 @@ export const ThemeSwitcher: React.FC = () => {
   const setTheme = (theme: 'light' | 'dark' | 'system') => {
     const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const newTheme = theme === 'system' ? (prefersColorScheme ? 'dark' : 'light') : theme;
-    document.body.setAttribute('data-theme', newTheme);
+    document.body.setAttribute('data-theme', newTheme); /* Esto setea un atributo 'data-theme' que no hace falta escribirlo dentro de algún tag html porque sirve para poder evidenciar un theme escrito en el CSS realmente */
     setCurrentTheme(newTheme);
     localStorage.setItem('theme', theme);
   };
